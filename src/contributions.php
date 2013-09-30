@@ -5,7 +5,7 @@ $wikiurl = $_GET["wiki"];
 $withoutSlash = explode('/', $wikiurl);
 $url = $withoutSlash[0];
 $completeUrl = "http://";
-$completeUrl.= $url;
+$completeUrl.= str_replace('http://', '', $url);
 
 include_once( dirname(__FILE__) . '/diffFunctions.php');
 
