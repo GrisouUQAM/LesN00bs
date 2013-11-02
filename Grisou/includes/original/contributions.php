@@ -5,9 +5,9 @@ $wikiurl = $_GET["wiki"];
 $withoutSlash = explode('/', $wikiurl);
 $url = $withoutSlash[0];
 $completeUrl = "http://";
-$completeUrl.= str_replace('http://', '', $url);
+$completeUrl.= $url;
 
-include_once( dirname(__FILE__) . '/diffFunctions.php');
+include_once(dirname(__FILE__) . '/diffFunctions.php');
 
 function showGoogleDiff($text1, $text2) {
 	$result = getDiff($text1, $text2); //Return an array of Diff objects

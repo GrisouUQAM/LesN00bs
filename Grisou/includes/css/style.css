@@ -3,6 +3,10 @@ body {
     background-color: #FFFFFF;
 }
 
+#firstHeading{
+	display:hidden;
+}
+
 header, section, footer, nav {
     width: 960px;
     margin: 0px auto 0px auto;
