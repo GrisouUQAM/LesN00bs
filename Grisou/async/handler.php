@@ -85,8 +85,8 @@ foreach ($usercontributions as $contribution) {
 	$jsonOld = file_get_contents($oldRevisionContent, true);
 	$oldTextDecoded = json_decode($jsonOld, true);	
 	
-	print_r("Query 2 :<br>");
-	print_r($oldTextDecoded);
+#	print_r("Query 2 :<br>");
+#	print_r($oldTextDecoded);
 	
 	$parsedOldText = $oldTextDecoded['parse'];
 	$oldTextText = $parsedOldText['text'];
@@ -95,8 +95,8 @@ foreach ($usercontributions as $contribution) {
 	$jsonNew = file_get_contents($userRevisionContent, true);
 	$newTextDecoded = json_decode($jsonNew, true);	
 	
-	print_r("Query 2 :<br>");
-	print_r($newTextDecoded);
+#	print_r("Query 2 :<br>");
+#	print_r($newTextDecoded);
 	
 	$parsedNewText = $newTextDecoded['parse'];
 	$newTextText = $parsedNewText['text'];

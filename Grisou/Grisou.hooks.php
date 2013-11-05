@@ -9,20 +9,7 @@ final class GrisouHooks {
 		$wOut->addModules( 'ext.grisouCss' );
 		$wOut->addModules( 'ext.grisouJs' );
 		
-		
-		$wOut->addHtml("<form id='grisou-form'>
-				<div id='question'>
-					<h2>Enter the username of the contributor:</h2>
-					<input type='text' name='user' />
-					<h2>Enter the url for the wikipedia web site the contributor has contributed to :</h2>
-					<input type='text' name='wiki' value='fr.wikipedia.org' />
-					<input type='button' value='Soumettre' id='grisou-submit' />
-				</div>
-			</form>");
-		
-		$wOut->addHtml("<div id='grisou-result'></div>");
-		
-		return true;
+		return $out;
 	}
 
 
@@ -37,7 +24,7 @@ $jsonurl = $completeUrl."/w/api.php?action=query&list=usercontribs&format=json&u
 		$contentActions['views']['grisou'] = array(
 			'class' => false,
 			'text' => "GISOU",
-			'href' => 'http://grisou.charlesforest.com/index.php/Extension:Grisou'
+			'href' => 'http://grisou.charlesforest.com/index.php/Special:Grisou'
 		);
 		return true;
 	}
