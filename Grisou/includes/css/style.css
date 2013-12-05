@@ -45,9 +45,6 @@ section h2{
     font-size: 1.3em;
 }
 
-#question h2 {
-    width: 940px;
-}
 
 nav {
     display: block;
@@ -104,4 +101,26 @@ th{
     width: 620px;
     float: left;
     margin : 10px;
+}
+
+/*
+	
+	CSS for async
+
+*/
+
+user{
+	width: 66px;
+	display: inline-block;
+}
+elem{
+	display: inline-block;
+}
+date{
+	float:right;
+	display: inline-block;
+}
+
+.grisouTables{
+	width: 100%;
 }

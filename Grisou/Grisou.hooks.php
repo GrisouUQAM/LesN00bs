@@ -23,8 +23,8 @@ $jsonurl = $completeUrl."/w/api.php?action=query&list=usercontribs&format=json&u
 	public static function onSkinTemplateNavigation( &$skin, &$contentActions ) {
 		$contentActions['views']['grisou'] = array(
 			'class' => false,
-			'text' => "GISOU",
-			'href' => 'http://grisou.charlesforest.com/index.php/Special:Grisou'
+			'text' => "GRISOU",
+			'href' => '/index.php/Special:Grisou'
 		);
 		return true;
 	}

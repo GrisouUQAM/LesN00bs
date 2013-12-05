@@ -29,6 +29,7 @@ class SpecialGrisou extends SpecialPage {
 					    <input type='text' name='user' />
 					    <h2>Enter the url for the wikipedia web site the contributor has contributed to :</h2>
 					    <input type='text' name='wiki' value='fr.wikipedia.org' />
+					    <input type='hidden' name='page' value='base' />
 					    <input type='button' value='Soumettre' id='grisou-submit' />
 				    </div>
 			    </form>
